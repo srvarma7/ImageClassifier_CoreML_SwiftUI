@@ -9,11 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
+    let images = ["dog", "cat", "tree", "building"]
+    @State var seletedImage = ""
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                ImagesScrollView(images: images, selectedImage: $seletedImage)
+                
+                Button("Detect", action: {
+                    
+                })
+                .padding(10)
+                .foregroundColor(.white)
+                .background(Color.green)
+                .cornerRadius(10)
+                
+                Text("Classification is displayed here")
+                    .padding()
+                
+                Spacer()
+            }
+            
+            .navigationBarTitle("Image Classification", displayMode: .automatic)
+        }
     }
 }
 
