@@ -15,6 +15,8 @@
 		808DD93E2501A72100CF8BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808DD93C2501A72100CF8BC2 /* LaunchScreen.storyboard */; };
 		808DD9472501A92E00CF8BC2 /* ImagesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD9462501A92E00CF8BC2 /* ImagesScrollView.swift */; };
 		808DD9492501A93A00CF8BC2 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD9482501A93A00CF8BC2 /* ImageView.swift */; };
+		808DD94C2501CDDF00CF8BC2 /* ImageClassificationViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD94B2501CDDF00CF8BC2 /* ImageClassificationViewModal.swift */; };
+		808DD94F2501CE2C00CF8BC2 /* ImageDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD94E2501CE2C00CF8BC2 /* ImageDetectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		808DD93F2501A72100CF8BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808DD9462501A92E00CF8BC2 /* ImagesScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesScrollView.swift; sourceTree = "<group>"; };
 		808DD9482501A93A00CF8BC2 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		808DD94B2501CDDF00CF8BC2 /* ImageClassificationViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewModal.swift; sourceTree = "<group>"; };
+		808DD94E2501CE2C00CF8BC2 /* ImageDetectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 		808DD9302501A71D00CF8BC2 /* ImageClassificatiion */ = {
 			isa = PBXGroup;
 			children = (
+				808DD94D2501CE1500CF8BC2 /* Manager */,
+				808DD94A2501CC9B00CF8BC2 /* Modal */,
 				808DD9452501A90C00CF8BC2 /* View */,
 				808DD9312501A71D00CF8BC2 /* AppDelegate.swift */,
 				808DD9332501A71D00CF8BC2 /* SceneDelegate.swift */,
@@ -87,6 +93,22 @@
 				808DD9482501A93A00CF8BC2 /* ImageView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		808DD94A2501CC9B00CF8BC2 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				808DD94B2501CDDF00CF8BC2 /* ImageClassificationViewModal.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		808DD94D2501CE1500CF8BC2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				808DD94E2501CE2C00CF8BC2 /* ImageDetectionManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +185,8 @@
 				808DD9322501A71D00CF8BC2 /* AppDelegate.swift in Sources */,
 				808DD9472501A92E00CF8BC2 /* ImagesScrollView.swift in Sources */,
 				808DD9342501A71D00CF8BC2 /* SceneDelegate.swift in Sources */,
+				808DD94C2501CDDF00CF8BC2 /* ImageClassificationViewModal.swift in Sources */,
+				808DD94F2501CE2C00CF8BC2 /* ImageDetectionManager.swift in Sources */,
 				808DD9362501A71D00CF8BC2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
