@@ -11,6 +11,7 @@ struct ContentView: View {
     
     let images = ["dog", "cat", "tree", "building"]
     @State var seletedImage = ""
+    //@ObservedObject var predictedName: ImageClassificationViewModal()
     
     var body: some View {
         NavigationView {

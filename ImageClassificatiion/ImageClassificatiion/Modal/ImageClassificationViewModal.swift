@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import UIKit
 
 class ImageClassificationViewModal: ObservableObject {
     
@@ -19,8 +20,15 @@ class ImageClassificationViewModal: ObservableObject {
         self.imgDetectionMgr = imgDetMgr
     }
     
-    func classifyImage(name: String) {
+    func detectImage(name: String) {
         
+        let sourceImage = UIImage(named: name)
+        
+        guard let resizedImage = sourceImage?.resizeImageTo(to: CGSize(width: 224, height: 224)) else { fatalError("Error while resizing the image") }
+        
+        if let output = imgDetectionMgr.classifyImage(img: resizedImage) {
+            detectedName = output
+        }
     }
     
 }
