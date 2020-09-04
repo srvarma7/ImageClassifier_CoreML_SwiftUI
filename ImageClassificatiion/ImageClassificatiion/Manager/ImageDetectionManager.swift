@@ -9,4 +9,8 @@ import Foundation
 
 class ImageDetectionManager {
     
+    /*
+     Resnet50.mlmodel is not uploaded to the Repo
+     Please go to https://developer.apple.com/machine-learning/models/ and download the mlmodel
+     */
 }
