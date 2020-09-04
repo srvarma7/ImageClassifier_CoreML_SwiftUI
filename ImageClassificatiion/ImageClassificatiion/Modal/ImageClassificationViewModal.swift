@@ -14,7 +14,7 @@ class ImageClassificationViewModal: ObservableObject {
     var imageName: String = ""
     @Published var detectedName: String = ""
     
-    var imgDetectionMgr: ImageDetectionManager
+    var imgDetectionMgr = ImageDetectionManager()
     
     init(imgDetMgr: ImageDetectionManager) {
         self.imgDetectionMgr = imgDetMgr

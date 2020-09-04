@@ -16,15 +16,13 @@ struct ImageView: View {
         Image(image)
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 250, height: 250)
+            .frame(width: 200, height: 200)
             .clipShape(Circle())
             .padding()
             .onTapGesture(count: 1, perform: {
                 self.selectedImage = image
             })
             .border(Color.black, width: self.selectedImage == image ? 5 : 0)
-            
-            
     }
 }
 

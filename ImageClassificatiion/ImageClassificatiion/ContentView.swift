@@ -11,7 +11,13 @@ struct ContentView: View {
     
     let images = ["dog", "cat", "tree", "building"]
     @State var seletedImage = ""
-    //@ObservedObject var predictedName: ImageClassificationViewModal()
+    @ObservedObject private var ImgClassificationVM: ImageClassificationViewModal
+    private var imageDetMgr: ImageDetectionManager
+    
+    init() {
+        imageDetMgr = ImageDetectionManager()
+        ImgClassificationVM = ImageClassificationViewModal(imgDetMgr: imageDetMgr)
+    }
     
     var body: some View {
         NavigationView {
@@ -19,15 +25,21 @@ struct ContentView: View {
                 ImagesScrollView(images: images, selectedImage: $seletedImage)
                 
                 Button("Detect", action: {
-                    
+                    if seletedImage != "" {
+                        ImgClassificationVM.detectImage(name: seletedImage)
+                    }
                 })
                 .padding(10)
                 .foregroundColor(.white)
                 .background(Color.green)
                 .cornerRadius(10)
                 
-                Text("Classification is displayed here")
+                Text(ImgClassificationVM.detectedName == "" ? "Classification is displayed here: Select an image and press Detect" : "\(ImgClassificationVM.detectedName)")
                     .padding()
+                    .lineLimit(nil)
+                    .font(ImgClassificationVM.detectedName == "" ? .body : .title)
+                    .foregroundColor(ImgClassificationVM.detectedName == "" ? Color.gray : .blue)
+                    .multilineTextAlignment(.center)
                 
                 Spacer()
             }
