@@ -17,6 +17,8 @@
 		808DD9492501A93A00CF8BC2 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD9482501A93A00CF8BC2 /* ImageView.swift */; };
 		808DD94C2501CDDF00CF8BC2 /* ImageClassificationViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD94B2501CDDF00CF8BC2 /* ImageClassificationViewModal.swift */; };
 		808DD94F2501CE2C00CF8BC2 /* ImageDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD94E2501CE2C00CF8BC2 /* ImageDetectionManager.swift */; };
+		808DD9522501D24800CF8BC2 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 808DD9512501D24700CF8BC2 /* Resnet50.mlmodel */; };
+		808DD9552501D2B700CF8BC2 /* UIImage+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DD9542501D2B700CF8BC2 /* UIImage+Extenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		808DD9482501A93A00CF8BC2 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		808DD94B2501CDDF00CF8BC2 /* ImageClassificationViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewModal.swift; sourceTree = "<group>"; };
 		808DD94E2501CE2C00CF8BC2 /* ImageDetectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetectionManager.swift; sourceTree = "<group>"; };
+		808DD9512501D24700CF8BC2 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		808DD9542501D2B700CF8BC2 /* UIImage+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extenstion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 		808DD9302501A71D00CF8BC2 /* ImageClassificatiion */ = {
 			isa = PBXGroup;
 			children = (
+				808DD9532501D29600CF8BC2 /* Extensions */,
+				808DD9502501D22800CF8BC2 /* ML Model */,
 				808DD94D2501CE1500CF8BC2 /* Manager */,
 				808DD94A2501CC9B00CF8BC2 /* Modal */,
 				808DD9452501A90C00CF8BC2 /* View */,
@@ -109,6 +115,22 @@
 				808DD94E2501CE2C00CF8BC2 /* ImageDetectionManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		808DD9502501D22800CF8BC2 /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				808DD9512501D24700CF8BC2 /* Resnet50.mlmodel */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		808DD9532501D29600CF8BC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				808DD9542501D2B700CF8BC2 /* UIImage+Extenstion.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,8 +207,10 @@
 				808DD9322501A71D00CF8BC2 /* AppDelegate.swift in Sources */,
 				808DD9472501A92E00CF8BC2 /* ImagesScrollView.swift in Sources */,
 				808DD9342501A71D00CF8BC2 /* SceneDelegate.swift in Sources */,
+				808DD9552501D2B700CF8BC2 /* UIImage+Extenstion.swift in Sources */,
 				808DD94C2501CDDF00CF8BC2 /* ImageClassificationViewModal.swift in Sources */,
 				808DD94F2501CE2C00CF8BC2 /* ImageDetectionManager.swift in Sources */,
+				808DD9522501D24800CF8BC2 /* Resnet50.mlmodel in Sources */,
 				808DD9362501A71D00CF8BC2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
